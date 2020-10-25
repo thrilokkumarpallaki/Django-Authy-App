@@ -1,0 +1,12 @@
+WARNING: git-filter-branch has a glut of gotchas generating mangled history
+	 rewrites.  Hit Ctrl-C before proceeding to abort, then use an
+	 alternative filtering tool such as 'git filter-repo'
+	 (https://github.com/newren/git-filter-repo/) instead.  See the
+	 filter-branch manual page for more details; to squelch this warning,
+	 set FILTER_BRANCH_SQUELCH_WARNING=1.
+Proceeding with filter-branch...
+
+Rewrite 1210b22b6f894234eaa3602cfa762f4ffc7eafb5 (1/2) (0 seconds passed, remaining 0 predicted)    rm 'djangoProject/settings.py'
+Rewrite ad3f1bb34c6b82a202bd890eedb1d10ec408f72a (2/2) (0 seconds passed, remaining 0 predicted)    
+Ref 'refs/heads/master' was rewritten
+Ref 'refs/remotes/origin/master' was rewritten
