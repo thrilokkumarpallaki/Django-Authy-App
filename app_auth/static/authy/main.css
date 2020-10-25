@@ -1,0 +1,54 @@
+/* Global Styles */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Helvetica Neue", sans-serif;
+}
+/* Index Page Styles */
+.indx-hdr {
+    text-align: center;
+    color: #4576c4;
+}
+a {
+    text-decoration: none;
+    color:#4576c4;
+    font-size: 16px;
+}
+
+/* Login Page Styles */
+.bg-scn {
+    background: linear-gradient(to right, #4576c4, #57d945);
+    height: 100vh;
+}
+
+.lgn-hdr {
+    text-align: center;
+    text-shadow: 2px 2px 4px #a3a3a3, 2px 2px 4px #fff;
+    padding: 8px;
+}
+
+.lgn-container, .sgn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-lgn{
+    width: 30%;
+    height: 30%;
+    padding: 16px;
+}
+
+.card-sgnup {
+    width: 45%;
+    height: 50%;
+    padding: 16px;
+    margin: 8px;
+}
+
+.card-sgnup .row {
+    padding: 16px;
+}
+.card-sgnup .form-group {
+    margin: 0 8px;
+}

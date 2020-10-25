@@ -1,0 +1,32 @@
+{% extends 'auth/base.html' %}
+{% block title %}
+    Login Page | Django Authy App
+{% endblock %}
+
+{% block content %}
+    <div class="bg-scn">
+        <h1 class="lgn-hdr">Django Authy Login</h1>
+
+        <div class="container-fluid">
+            <div class="lgn-container">
+                <div class="card card-lgn">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" name="username" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Login</button>
+                        </div>
+                    </form>
+                    <p><a href="#">Forgot Password? Reset Here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

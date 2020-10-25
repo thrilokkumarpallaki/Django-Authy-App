@@ -1,0 +1,74 @@
+{% extends 'auth/base.html' %}
+
+{% block title %}
+    Signup | Django Authy App
+{% endblock %}
+
+{% block content %}
+    <div class="bg-scn">
+        <div>
+            <h1 class="lgn-hdr">Django Authy Signup</h1>
+
+            <div class="sgn-container">
+                <div class="card card-sgnup">
+                    <form action="" method="POST" autocomplete="off">
+                        {% csrf_token %}
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="FirstName">First Name</label>
+                                <input type="text" name="first_name" id="FirstName" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="LastName">Last Name</label>
+                                <input type="text" name="last_name" id="LastName" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="Email">Email</label>
+                                <input type="email" name="email" id="Email" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="Username">Username</label>
+                                <input type="text" name="username" id="Username" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="re-pass">Confirm Password</label>
+                                <input type="password" name="repass" id="re-pass" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <label for="dob">DOB</label>
+                                <input type="date" name="dob" id="dob" class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select name="gender" id="gender" class="form-control">
+                                    <option value="F">Female</option>
+                                    <option value="M">Male</option>
+                                    <option value="N">Not to specify</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Signup</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
