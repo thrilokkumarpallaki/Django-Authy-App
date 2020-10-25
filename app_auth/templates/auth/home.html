@@ -17,7 +17,7 @@
                     {{ user.profile.first_name }} {{ user.profile.last_name }}
                 </a>
                 <div class="dropdown-menu">
-                    <a href="#" class="dropdown-item">Settings</a>
+                    <a href="{% url 'authy:user_profile_settings' user.username %}" class="dropdown-item">Settings</a>
                     <a href="{% url 'authy:logout' %}" class="dropdown-item">Logout</a>
                 </div>
             </li>

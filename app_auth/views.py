@@ -71,5 +71,14 @@ def user_signup(request):
 @login_required(login_url='/auth/login')
 def home(request, user):
     user = get_object_or_404(User, username=user)
-    breakpoint()
     return render(request, 'auth/home.html', {'user': user})
+
+
+@login_required(login_url='/auth/login')
+def profile_settings(request, user):
+    if request.user.is_authenticated:
+        user = request.user.username
+        user_obj = get_object_or_404(User, username=user)
+        return render(request, 'auth/user_profile_settings.html', {'user': user_obj})
+    else:
+        return redirect(reverse('authy:login'))

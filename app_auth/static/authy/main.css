@@ -52,3 +52,15 @@ a {
 .card-sgnup .form-group {
     margin: 0 8px;
 }
+
+/* Profile Settings Styles */
+.profile-container{
+    background-image: linear-gradient(to right, #41b7c4, #4296c9, #3d86d9,#693dd9, #793dd9);
+    height: 100vh;
+}
+
+.pro-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
